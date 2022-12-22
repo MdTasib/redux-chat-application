@@ -8,10 +8,10 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 
 function App() {
-	const authCheckd = useAuthCheck();
+	const authChecked = useAuthCheck();
 
-	return !authCheckd ? (
-		<div>Checking authentication...</div>
+	return !authChecked ? (
+		<div>Checking authentication....</div>
 	) : (
 		<Router>
 			<Routes>
